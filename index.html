@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andi Naufal | iOS Developer & UI/UX Designer</title>
+    <title>Andi Naufal | iOS Developer &amp; UI/UX Designer</title>
     <meta name="description"
-        content="Portfolio of Andi Naufal Falah Muhamad - iOS developer and UI/UX designer with a strong foundation in Computer Science, bridging the gap between user-centered product design and robust native mobile engineering.">
+        content="Portfolio of Andi Naufal Falah Muhamad - iOS developer and UI/UX designer at Apple Developer Academy @ BINUS Bali, bridging the gap between user-centered product design and robust native mobile engineering.">
     <meta name="keywords"
         content="Andi Naufal, iOS Developer, UI/UX Designer, Apple Developer Academy Bali, Swift, SwiftUI, UIKit, Figma, Sketch, Product Minded Engineer, User Experience Design">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Andi Naufal | iOS Developer & UI/UX Designer">
+    <meta property="og:title" content="Andi Naufal | iOS Developer &amp; UI/UX Designer">
     <meta property="og:description"
         content="Bridging the gap between user-centered product design and robust native mobile engineering. iOS Developer mentee at Apple Developer Academy Bali.">
 
@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Stylesheet -->
@@ -35,8 +35,10 @@
                 andi naufal
             </a>
             <ul class="nav-links">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#approach" class="nav-link">Approach</a></li>
+                <li><a href="#projects" class="nav-link">Selected Work</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li class="nav-socials">
                     <a href="https://linkedin.com/in/andinaufalfm" target="_blank" rel="noopener noreferrer"
@@ -46,6 +48,13 @@
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                             <rect x="2" y="9" width="4" height="12" />
                             <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/sgtandi" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub" class="nav-social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                         </svg>
                     </a>
                     <a href="https://www.behance.net/andinaufal2" target="_blank" rel="noopener noreferrer"
@@ -63,44 +72,55 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <div class="status-badge fade-in-up">
-                    <span class="status-dot pulsing"></span>
-                    <span>iOS Developer Mentee @ Apple Developer Academy Bali</span>
+        <!-- Hero Section (Editorial Layout inspired by apriliaananta.com) -->
+        <section id="hero" class="hero-editorial">
+            <div class="hero-editorial-center">
+                <div class="hero-eyebrow fade-in-up">
+                    <span class="eyebrow-dot"></span>
+                    <span>Available for new opportunities &amp; iOS projects</span>
                 </div>
-                <h1 class="hero-title fade-in-up">
-                    Bridging <span class="gradient-text">user-centered design</span> and robust <span
-                        class="gradient-text">native iOS engineering</span>.
-                </h1>
-                <p class="hero-subtitle fade-in-up">
-                    I am Andi Naufal, an iOS developer and UI/UX designer with a strong foundation in Computer Science, crafting intuitive, high-performance applications that adhere to Apple's Human Interface Guidelines (HIG).
-                </p>
-                <div class="hero-actions fade-in-up">
-                    <a href="#projects" class="btn btn-primary">View Featured Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
-                </div>
-            </div>
 
-            <!-- Interactive Lanyard & ID Card -->
-            <div class="lanyard-container">
-                <canvas id="lanyard-canvas"></canvas>
-                <div id="interactive-card" class="badge-card">
-                    <div class="badge-clip-hole"></div>
-                    <div class="badge-body">
-                        <div class="badge-photo-frame">
-                            <img src="profile_lanyard.jpg" alt="Andi Naufal" class="badge-photo">
-                        </div>
-                        <h3 class="badge-name">Andi Naufal</h3>
-                        <span class="badge-role">iOS Developer & UI/UX Designer</span>
+                <h1 class="hero-editorial-name fade-in-up">
+                    <em>Andi Naufal</em>
+                </h1>
+
+                <p class="hero-tagline-static fade-in-up">BUILD PRODUCTS THAT MATTER —</p>
+                <p class="hero-tagline-dynamic fade-in-up">
+                    <span id="tagline-suffix">BRIDGING CODE &amp; DESIGN.</span><span class="cursor-blink">|</span>
+                </p>
+
+                <div class="hero-avatar-wrap fade-in-up">
+                    <div class="hero-avatar-ring"></div>
+                    <div class="hero-avatar-circle">
+                        <img src="profile.jpg" alt="Andi Naufal">
                     </div>
-                    <div class="badge-footer">
-                        <div class="badge-barcode">
-                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                        </div>
-                        <span class="badge-id">APPLE-BINUS-2026</span>
+                </div>
+
+                <div class="hero-stats-row fade-in-up">
+                    <div class="stat-item">
+                        <span class="stat-value">2+</span>
+                        <span class="stat-label">Years Exp</span>
                     </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">6+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">4+</span>
+                        <span class="stat-label">Cross Teams</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">1×</span>
+                        <span class="stat-label">Apple Academy</span>
+                    </div>
+                </div>
+
+                <div class="hero-scroll-indicator fade-in-up">
+                    <span>Scroll</span>
+                    <div class="scroll-indicator-line"></div>
                 </div>
             </div>
         </section>
@@ -108,21 +128,57 @@
         <!-- About Me Section -->
         <section id="about" class="about-section">
             <div class="section-container">
+                <div class="about-opening fade-in-up">
+                    <span class="section-label">About Me</span>
+                    <h2 class="editorial-headline">MOST PEOPLE BUILD APPS.<br><em>I build the thinking behind them.</em></h2>
+                </div>
+
+                <p class="about-statement fade-in-up">
+                    AN EXPERIENCED PRODUCT-MINDED IOS DEVELOPER &amp; UI/UX DESIGNER, BLENDING HUMAN-CENTERED RESEARCH WITH PRODUCTION-GRADE SWIFT ARCHITECTURE.
+                </p>
+
+                <div class="philosophy-card fade-in-up">
+                    <span class="section-label">MY PHILOSOPHY</span>
+                    <p class="philosophy-text">
+                        GREAT SOFTWARE DOESN'T COMPROMISE BETWEEN BEAUTY AND CODE. BY CONNECTING USER PSYCHOLOGY, ATOMIC DESIGN SYSTEMS, AND APPLE'S HUMAN INTERFACE GUIDELINES WITH CLEAN SWIFTUI &amp; UIKIT ARCHITECTURES, I ENGINEER PRODUCTS THAT USERS LOVE AND TEAMS CAN CONFIDENTLY SCALE.
+                    </p>
+                </div>
+
                 <div class="about-grid">
                     <div class="about-image-wrapper fade-in-up">
-                        <img src="profile.jpg" alt="Andi Naufal Falah Muhamad" class="about-img">
+                        <!-- Interactive Lanyard & ID Card -->
+                        <div class="lanyard-container">
+                            <canvas id="lanyard-canvas"></canvas>
+                            <div id="interactive-card" class="badge-card">
+                                <div class="badge-clip-hole"></div>
+                                <div class="badge-body">
+                                    <div class="badge-photo-frame">
+                                        <img src="profile_lanyard.jpg" alt="Andi Naufal" class="badge-photo">
+                                    </div>
+                                    <h3 class="badge-name">Andi Naufal</h3>
+                                    <span class="badge-role">iOS Developer &amp; UI/UX</span>
+                                </div>
+                                <div class="badge-footer">
+                                    <div class="badge-barcode">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <span class="badge-id">APPLE-BINUS-2026</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="about-text-content fade-in-up">
-                        <span class="about-tag">About Me</span>
-                        <h2 class="about-name">Andi Naufal Falah Muhamad</h2>
-                        <span class="about-title">iOS Developer & UI/UX Designer</span>
+                        <span class="about-tag">Background &amp; Focus</span>
+                        <h3 class="about-name">Andi Naufal Falah Muhamad</h3>
+                        <span class="about-title">iOS Developer Mentee @ Apple Developer Academy Bali</span>
 
                         <div class="about-paragraphs">
                             <p>
                                 An iOS developer and UI/UX designer with a strong foundation in Computer Science, bridging the gap between user-centered product design and robust native mobile engineering. I mainly work with Figma, Sketch, Swift, SwiftUI, UIKit, Xcode, Git/GitHub Actions, TestFlight CI/CD, and iOS architecture patterns.
                             </p>
                             <p>
-                                Currently an iOS Developer mentee at the Apple Developer Academy @ BINUS Bali, I've built and collaborated on products across native mobile apps, IoT integrations, and sports & leisure tech. My experience includes developing native iOS applications, conducting end-to-end UX research, creating scalable design systems, and leading cross-functional agile sprints.
+                                Currently an iOS Developer mentee at the Apple Developer Academy @ BINUS Bali, I've built and collaborated on products across native mobile apps, IoT integrations, and sports &amp; leisure tech. My experience includes developing native iOS applications, conducting end-to-end UX research, creating scalable design systems, and leading cross-functional agile sprints.
                             </p>
                             <p>
                                 My goal is to keep growing as a product-minded iOS engineer who brings both deep design sensibility and solid technical architecture whilst crafting intuitive, high-performance applications that adhere to Apple's Human Interface Guidelines (HIG). I'm especially interested in opportunities where I can collaborate with forward-thinking teams to build impactful mobile experiences and user-first digital products.
@@ -136,6 +192,7 @@
                                 <span class="tag">User Experience Design (UED)</span>
                                 <span class="tag">User Interface Design</span>
                                 <span class="tag">Swift</span>
+                                <span class="tag">SwiftUI</span>
                                 <span class="tag">iOS Development</span>
                             </div>
                         </div>
@@ -146,22 +203,85 @@
             </div>
         </section>
 
+        <!-- My Approach Section -->
+        <section id="approach" class="approach-section">
+            <div class="section-container">
+                <div class="section-header" style="text-align: center; margin: 0 auto 3.5rem auto;">
+                    <span class="section-label">Process &amp; Methodology</span>
+                    <h2 class="section-title">How I Build Products</h2>
+                    <p class="section-description">
+                        A systematic four-phase methodology bridging user research and native Apple ecosystem engineering.
+                    </p>
+                </div>
 
+                <div class="approach-grid">
+                    <div class="step-card fade-in-up">
+                        <span class="step-num">01</span>
+                        <h3 class="step-title">Discovery &amp; Alignment</h3>
+                        <p class="step-desc">Uncovering real user friction through qualitative interviews, competitive benchmarking, and problem definition before writing a single line of code.</p>
+                        <div class="step-tags">
+                            <span class="step-tag">User Research</span>
+                            <span class="step-tag">Problem Framing</span>
+                            <span class="step-tag">User Journeys</span>
+                        </div>
+                    </div>
+
+                    <div class="step-card fade-in-up">
+                        <span class="step-num">02</span>
+                        <h3 class="step-title">Concept &amp; Design</h3>
+                        <p class="step-desc">Translating behavioral insights into atomic design systems, interactive Figma prototypes, and Apple HIG-compliant interaction flows.</p>
+                        <div class="step-tags">
+                            <span class="step-tag">Figma</span>
+                            <span class="step-tag">Design System</span>
+                            <span class="step-tag">Apple HIG</span>
+                        </div>
+                    </div>
+
+                    <div class="step-card fade-in-up">
+                        <span class="step-num">03</span>
+                        <h3 class="step-title">Build &amp; Architecture</h3>
+                        <p class="step-desc">Engineering native iOS apps with clean Swift, SwiftUI, UIKit, and modular architecture designed for performance, accessibility, and scalability.</p>
+                        <div class="step-tags">
+                            <span class="step-tag">SwiftUI</span>
+                            <span class="step-tag">UIKit</span>
+                            <span class="step-tag">Xcode CI/CD</span>
+                        </div>
+                    </div>
+
+                    <div class="step-card fade-in-up">
+                        <span class="step-num">04</span>
+                        <h3 class="step-title">Testing &amp; Refine</h3>
+                        <p class="step-desc">Validating usability through moderated sessions, TestFlight beta feedback, performance profiling, and iterative optimization.</p>
+                        <div class="step-tags">
+                            <span class="step-tag">Usability Testing</span>
+                            <span class="step-tag">TestFlight</span>
+                            <span class="step-tag">Iterative Polish</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Projects Experience Section -->
         <section id="projects" class="projects-section">
             <div class="section-container">
-                <div class="section-header">
-                    <span class="section-label">Selected Works</span>
-                    <h2 class="section-title">Featured Projects & Case Studies</h2>
-                    <p class="section-description">
-                        Native iOS applications, IoT integrations, and user-centered digital products built with Swift and Figma.
+                <div class="featured-header fade-in-up">
+                    <span class="section-label">Selected Work</span>
+                    <h2 class="featured-heading">FEATURED <em>PROJECTS</em></h2>
+                    <p class="section-description" style="margin-top: 1rem;">
+                        Native iOS applications, UX case studies, and scalable design systems built with Swift and Figma.
                     </p>
                 </div>
 
                 <div class="projects-grid">
                     <!-- Project 1: CourtMates -->
-                    <div class="project-card">
+                    <div class="project-card fade-in-up">
+                        <div class="card-arrow-badge" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
                         <div class="project-visual bg-swift">
                             <div class="terminal-mock">
                                 <span class="command">[Product: CourtMates iOS]</span>
@@ -171,10 +291,10 @@
                             </div>
                         </div>
                         <div class="project-info">
-                            <span class="project-meta">Current Project • Apple Developer Academy @ BINUS Bali</span>
+                            <span class="project-meta">Current Product • Apple Developer Academy @ BINUS Bali</span>
                             <h3>CourtMates: Native iOS Sports Matchmaking App</h3>
                             <p class="project-text">
-                                Co-developing a premium native iOS matchmaking and performance analytics app for sports & leisure players.
+                                Co-developing a premium native iOS matchmaking and performance analytics app for sports &amp; leisure players.
                                 Features smart matchmaking algorithms, performance tracking, and HawkEye Computer Vision-based line
                                 detection, adhering strictly to Apple's Human Interface Guidelines.
                             </p>
@@ -189,17 +309,23 @@
                     </div>
 
                     <!-- Project 2: NusaTravela -->
-                    <div class="project-card">
+                    <div class="project-card fade-in-up">
+                        <div class="card-arrow-badge" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
                         <div class="project-visual bg-nusa">
                             <div class="terminal-mock">
                                 <span class="command">[Product Design: NusaTravela]</span>
-                                <span class="output">> Methods: End-to-End UX Research & Scalable Design System</span>
+                                <span class="output">> Methods: End-to-End UX Research &amp; Scalable Design System</span>
                                 <span class="output">> Tools: Figma, Interactive Prototyping, Usability Testing</span>
                                 <span class="output">> Impact: Streamlined Search-to-Checkout Funnel</span>
                             </div>
                         </div>
                         <div class="project-info">
-                            <span class="project-meta">End-to-End UX Research & Product Design</span>
+                            <span class="project-meta">End-to-End UX Research &amp; Product Design</span>
                             <h3>NusaTravela: Online Travel Agent Mobile App</h3>
                             <p class="project-text">
                                 Led end-to-end UX research and interface design for an online travel booking experience.
@@ -228,18 +354,24 @@
                     </div>
 
                     <!-- Project 3: Alerta App -->
-                    <div class="project-card">
+                    <div class="project-card fade-in-up">
+                        <div class="card-arrow-badge" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
                         <div class="project-visual bg-swift">
                             <div class="terminal-mock">
                                 <span class="command">[Native iOS App: AlertaApp]</span>
                                 <span class="output">> Stack: Swift, UIKit, Xcode, Push Notification Service</span>
-                                <span class="output">> Architecture: Offline Caching & Low-Latency Disaster Alerts</span>
-                                <span class="output">> Focus: High-Stress Incident Reporting & Community Feed</span>
+                                <span class="output">> Architecture: Offline Caching &amp; Low-Latency Disaster Alerts</span>
+                                <span class="output">> Focus: High-Stress Incident Reporting &amp; Community Feed</span>
                             </div>
                         </div>
                         <div class="project-info">
                             <span class="project-meta">Native iOS Development</span>
-                            <h3>AlertaApp: Emergency Reporting & Alert System</h3>
+                            <h3>AlertaApp: Emergency Reporting &amp; Alert System</h3>
                             <p class="project-text">
                                 Native iOS emergency response application engineered for high-pressure situations. Features rapid
                                 one-touch incident reporting, offline caching for disaster resilience, real-time push alert feeds,
@@ -267,18 +399,24 @@
                     </div>
 
                     <!-- Project 4: Kemkes.go.id Redesign -->
-                    <div class="project-card">
+                    <div class="project-card fade-in-up">
+                        <div class="card-arrow-badge" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
                         <div class="project-visual bg-kemkes">
                             <div class="terminal-mock">
-                                <span class="command">[Design System & IA: Kemkes.go.id]</span>
-                                <span class="output">> Deliverables: Information Architecture & Standardized UI Library</span>
+                                <span class="command">[Design System &amp; IA: Kemkes.go.id]</span>
+                                <span class="output">> Deliverables: Information Architecture &amp; Standardized UI Library</span>
                                 <span class="output">> Methods: Heuristic Evaluation, Accessibility Audit, Figma</span>
-                                <span class="output">> Focus: Public Health Service Findability & Trust</span>
+                                <span class="output">> Focus: Public Health Service Findability &amp; Trust</span>
                             </div>
                         </div>
                         <div class="project-info">
-                            <span class="project-meta">UI/UX Design & Design System</span>
-                            <h3>Kemkes.go.id: Portal Redesign & Design System</h3>
+                            <span class="project-meta">UI/UX Design &amp; Design System</span>
+                            <h3>Kemkes.go.id: Portal Redesign &amp; Design System</h3>
                             <p class="project-text">
                                 Comprehensive redesign of the Indonesian Ministry of Health official portal. Re-architected multi-tier
                                 health service information hierarchies, resolved complex navigation bottlenecks, and developed an accessible,
@@ -308,10 +446,39 @@
             </div>
         </section>
 
+        <!-- Testimonials Editorial Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-container">
+                <div class="testimonials-highlight fade-in-up">
+                    <span class="section-label">What Collaborators Say</span>
+                    <h2 class="big-quote">
+                        “HIS ABILITY TO BRIDGE <strong>DEEP RESEARCH</strong> WITH <strong>NATIVE CODE</strong> ELEVATES THE ENTIRE TEAM'S PRODUCTIVITY.”
+                    </h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-item fade-in-up">
+                        <p>“Andi has an uncanny sense for detail. In our Apple Developer Academy sprints, he translated complex user feedback into intuitive SwiftUI components seamlessly.”</p>
+                        <span class="testimonial-author">— Academy Peer &amp; iOS Collaborator</span>
+                    </div>
+
+                    <div class="testimonial-item fade-in-up">
+                        <p>“Working with Andi on end-to-end design research was effortless. His Figma design systems are meticulously organized and ready for engineering handoff without friction.”</p>
+                        <span class="testimonial-author">— Product Design Teammate</span>
+                    </div>
+
+                    <div class="testimonial-item fade-in-up">
+                        <p>“Rigorous work ethic, high integrity in analyzing data, and clear communication. He reliably executes with precision across both technical and administrative goals.”</p>
+                        <span class="testimonial-author">— Faculty Advisor &amp; Project Lead</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Experiences Section -->
         <section id="experience" class="experience-section">
             <div class="section-container">
-                <div class="section-header">
+                <div class="section-header fade-in-up">
                     <span class="section-label">Timeline</span>
                     <h2 class="section-title">Professional Experience</h2>
                     <p class="section-description">
@@ -321,7 +488,7 @@
 
                 <div class="timeline">
                     <!-- Exp 1: iOS Developer Mentee -->
-                    <div class="timeline-item">
+                    <div class="timeline-item fade-in-up">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span class="timeline-date">February 2026 – Present</span>
@@ -330,13 +497,13 @@
                             <ul class="timeline-bullets">
                                 <li><strong>Native iOS Engineering</strong>: Building native applications from scratch using Swift, SwiftUI, UIKit, and Xcode, adhering to Apple's Human Interface Guidelines (HIG).</li>
                                 <li><strong>CourtMates (Current Product)</strong>: Co-developing CourtMates, a premium sports matchmaking app featuring sports partner matching, performance analytics, and HawkEye Computer Vision-based line detection.</li>
-                                <li><strong>Agile Collaboration & Delivery</strong>: Managing Git/GitHub Actions workflows, TestFlight CI/CD distributions, and collaborating in cross-functional agile sprints across mobile apps and IoT integrations.</li>
+                                <li><strong>Agile Collaboration &amp; Delivery</strong>: Managing Git/GitHub Actions workflows, TestFlight CI/CD distributions, and collaborating in cross-functional agile sprints across mobile apps and IoT integrations.</li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Exp 2: Assistant of Lecturer -->
-                    <div class="timeline-item">
+                    <div class="timeline-item fade-in-up">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span class="timeline-date">December 2023 – December 2025</span>
@@ -351,15 +518,15 @@
                     </div>
 
                     <!-- Exp 3: UI/UX Research & Designer -->
-                    <div class="timeline-item">
+                    <div class="timeline-item fade-in-up">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span class="timeline-date">February 2022 – July 2022</span>
-                            <h3 class="timeline-title">UI/UX Research & Designer</h3>
+                            <h3 class="timeline-title">UI/UX Research &amp; Designer</h3>
                             <span class="timeline-subtitle">Binar Academy • Internship • Kota Tangerang Selatan, Banten, Indonesia</span>
                             <ul class="timeline-bullets">
                                 <li><strong>End-to-End UX Research</strong>: Conducted qualitative user interviews and quantitative surveys, mapping complete customer journey maps, user flows, and wireframes to address core user pain points.</li>
-                                <li><strong>Prototyping & Usability Testing</strong>: Designed high-fidelity interactive prototypes in Figma, validating design hypotheses through usability testing sessions and iteratively refining component layouts.</li>
+                                <li><strong>Prototyping &amp; Usability Testing</strong>: Designed high-fidelity interactive prototypes in Figma, validating design hypotheses through usability testing sessions and iteratively refining component layouts.</li>
                                 <li><strong>Scalable Design Systems</strong>: Created modular UI component libraries adhering to atomic design principles for seamless handoff to engineering.</li>
                             </ul>
                         </div>
@@ -368,93 +535,40 @@
             </div>
         </section>
 
-
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
+        <!-- Contact Section (Editorial Style inspired by apriliaananta.com) -->
+        <section id="contact" class="contact-editorial">
             <div class="section-container">
-                <div class="contact-card">
-                    <div class="contact-info-panel">
-                        <h2>Let's build impactful mobile experiences together.</h2>
-                        <p>I am always open to discussing new opportunities, iOS engineering projects, product design collaborations, or speaking engagements.</p>
+                <span class="section-label fade-in-up">Get in Touch</span>
+                <h2 class="contact-editorial-title fade-in-up">
+                    Let's build <em>something great.</em>
+                </h2>
+                <p class="contact-editorial-sub fade-in-up">
+                    Always open to discussing new opportunities, iOS engineering roles, product design collaborations, or tech talks.
+                </p>
 
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path
-                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                        <polyline points="22,6 12,13 2,6" />
-                                    </svg>
-                                </span>
-                                <div class="contact-text">
-                                    <span class="label">Email</span>
-                                    <!-- Interactive Clipboard Button -->
-                                    <div class="email-click-to-copy" id="email-btn" title="Click to copy email address">
-                                        <span id="email-address">andinaufal0608@gmail.com</span>
-                                        <span class="copy-icon">
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round">
-                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                                            </svg>
-                                        </span>
-                                        <span class="copied-tooltip" id="copied-tooltip">Copied!</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path
-                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                        <rect x="2" y="9" width="4" height="12" />
-                                        <circle cx="4" cy="4" r="2" />
-                                    </svg>
-                                </span>
-                                <div class="contact-text">
-                                    <span class="label">LinkedIn</span>
-                                    <a href="https://linkedin.com/in/andinaufalfm" target="_blank"
-                                        rel="noopener noreferrer" class="value">linkedin.com/in/andinaufalfm</a>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                        <circle cx="12" cy="10" r="3" />
-                                    </svg>
-                                </span>
-                                <div class="contact-text">
-                                    <span class="label">Location</span>
-                                    <span class="value">Batu, East Java, Indonesia</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="social-links">
-                            <a href="https://github.com/sgtandi" target="_blank" rel="noopener noreferrer"
-                                aria-label="GitHub">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                                </svg>
-                            </a>
-                            <a href="https://www.behance.net/andinaufal2" target="_blank" rel="noopener noreferrer"
-                                aria-label="Behance">
-                                <span class="behance-text-logo">Bēhance</span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="contact-links-row fade-in-up">
+                    <a href="https://linkedin.com/in/andinaufalfm" target="_blank" rel="noopener noreferrer" class="contact-arrow-link">
+                        <span>LinkedIn</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <a href="https://github.com/sgtandi" target="_blank" rel="noopener noreferrer" class="contact-arrow-link">
+                        <span>GitHub</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <a href="https://www.behance.net/andinaufal2" target="_blank" rel="noopener noreferrer" class="contact-arrow-link">
+                        <span>Behance</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <button class="contact-arrow-link" id="email-btn" title="Click to copy email">
+                        <span id="email-address">andinaufal0608@gmail.com</span>
+                        <span class="copy-icon" style="display: inline-flex; margin-left: 0.25rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </span>
+                        <span class="copied-tooltip" id="copied-tooltip">Copied!</span>
+                    </button>
                 </div>
             </div>
         </section>
