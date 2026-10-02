@@ -133,45 +133,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateActiveNav, { passive: true });
     updateActiveNav();
 
-    // 6. Dynamic Tagline Typewriter (Inspired by apriliaananta.com)
-    const taglineSuffix = document.getElementById('tagline-suffix');
-    if (taglineSuffix) {
-        const phrases = [
-            "BRIDGING CODE & DESIGN.",
-            "CRAFTING NATIVE IOS EXPERIENCES.",
-            "ROOTED IN RESEARCH & HIG.",
-            "FROM ZERO TO LAUNCH."
-        ];
-        let phraseIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        let typingSpeed = 90;
-
-        function typeLoop() {
-            const currentPhrase = phrases[phraseIndex];
-            if (isDeleting) {
-                taglineSuffix.textContent = currentPhrase.substring(0, charIndex - 1);
-                charIndex--;
-                typingSpeed = 40;
-            } else {
-                taglineSuffix.textContent = currentPhrase.substring(0, charIndex + 1);
-                charIndex++;
-                typingSpeed = 90;
-            }
-
-            if (!isDeleting && charIndex === currentPhrase.length) {
-                isDeleting = true;
-                typingSpeed = 1800;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                phraseIndex = (phraseIndex + 1) % phrases.length;
-                typingSpeed = 400;
-            }
-
-            setTimeout(typeLoop, typingSpeed);
-        }
-
-        typeLoop();
-    }
-
 });
