@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Scroll Reveal Animation using IntersectionObserver
     const revealElements = [
-        '.values-title',
-        '.value-item',
+        '.values-header-wrap',
+        '.value-bento-card',
         '.section-header',
         '.about-image-wrapper',
         '.about-text-content',

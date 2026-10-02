@@ -105,75 +105,91 @@
         <!-- Design Values Section -->
         <section id="values" class="values-section">
             <div class="section-container">
-                <div class="values-grid">
-                    <div class="values-header">
-                        <div class="values-sticky-title">
-                            <h2 class="values-title">My design values —</h2>
+                <div class="values-header-wrap">
+                    <span class="section-label">Core Philosophy</span>
+                    <h2 class="section-title">Design Values Grounded in Native Engineering</h2>
+                    <p class="section-description">
+                        How I balance human empathy, cognitive ergonomics, and native Apple standards across every interface.
+                    </p>
+                </div>
+
+                <div class="values-bento-grid">
+                    <!-- Value 1: Accessibility -->
+                    <div class="value-bento-card bento-accessibility">
+                        <div class="bento-glow"></div>
+                        <div class="bento-card-top">
+                            <span class="bento-index">01</span>
+                            <span class="bento-badge">Inclusive Architecture</span>
+                        </div>
+                        <div class="bento-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="4.5" r="2"/>
+                                <path d="M12 9.5v5l3 4"/>
+                                <path d="M9 13h5.5l2-4"/>
+                                <path d="M8.5 10.5A5.5 5.5 0 1 0 14 16"/>
+                            </svg>
+                        </div>
+                        <h3 class="bento-title">Accessibility First</h3>
+                        <p class="bento-text">
+                            Designing for accessibility isn't an afterthought—it's the foundation of great software. By adhering strictly to Apple's HIG standards like Dynamic Type, VoiceOver optimization, and high-contrast hierarchies, I ensure experiences are inclusive, empowering, and effortlessly usable across permanent, temporary, and situational contexts.
+                        </p>
+                        <div class="bento-tags">
+                            <span class="val-pill">Dynamic Type</span>
+                            <span class="val-pill">VoiceOver</span>
+                            <span class="val-pill">WCAG AAA</span>
                         </div>
                     </div>
-                    <div class="values-list">
-                        <!-- Value 1: Accessibility first -->
-                        <div class="value-item">
-                            <div class="value-icon-wrapper">
-                                <div class="value-icon-backdrop"></div>
-                                <div class="value-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="4.5" r="2"/>
-                                        <path d="M12 9.5v5l3 4"/>
-                                        <path d="M9 13h5.5l2-4"/>
-                                        <path d="M8.5 10.5A5.5 5.5 0 1 0 14 16"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="value-content">
-                                <h3>Accessibility first</h3>
-                                <p>
-                                    Designing for accessibility isn't an afterthought—it's the foundation of great software. By adhering strictly to Apple's accessibility standards like Dynamic Type, VoiceOver optimization, and high-contrast hierarchies, I ensure experiences are inclusive, empowering, and effortlessly usable across permanent, temporary, and situational contexts.
-                                </p>
-                            </div>
-                        </div>
 
-                        <!-- Value 2: User focus -->
-                        <div class="value-item">
-                            <div class="value-icon-wrapper">
-                                <div class="value-icon-backdrop"></div>
-                                <div class="value-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M3 7V5a2 2 0 0 1 2-2h2"/>
-                                        <path d="M17 3h2a2 2 0 0 1 2 2v2"/>
-                                        <path d="M21 17v2a2 2 0 0 1-2 2h-2"/>
-                                        <path d="M7 21H5a2 2 0 0 1-2-2v-2"/>
-                                        <circle cx="12" cy="10" r="2.5"/>
-                                        <path d="M8 17a4 4 0 0 1 8 0"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="value-content">
-                                <h3>User focus</h3>
-                                <p>
-                                    Great digital products solve real human problems, not imagined ones. I place users at the center of every architectural and interface choice—grounding design decisions in firsthand usability observation, qualitative field research, and behavioral data rather than intuition alone.
-                                </p>
-                            </div>
+                    <!-- Value 2: User Focus -->
+                    <div class="value-bento-card bento-user-focus">
+                        <div class="bento-glow"></div>
+                        <div class="bento-card-top">
+                            <span class="bento-index">02</span>
+                            <span class="bento-badge">Empirical Discovery</span>
                         </div>
+                        <div class="bento-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 7V5a2 2 0 0 1 2-2h2"/>
+                                <path d="M17 3h2a2 2 0 0 1 2 2v2"/>
+                                <path d="M21 17v2a2 2 0 0 1-2 2h-2"/>
+                                <path d="M7 21H5a2 2 0 0 1-2-2v-2"/>
+                                <circle cx="12" cy="10" r="2.5"/>
+                                <path d="M8 17a4 4 0 0 1 8 0"/>
+                            </svg>
+                        </div>
+                        <h3 class="bento-title">Obsessively User-Focused</h3>
+                        <p class="bento-text">
+                            Digital products must solve authentic human friction, not assumed problems. I place user discovery at the center of every architectural choice—grounding UI decisions in firsthand usability observation, customer journey validation, and behavioral data rather than intuition alone.
+                        </p>
+                        <div class="bento-tags">
+                            <span class="val-pill">UX Research</span>
+                            <span class="val-pill">Journey Mapping</span>
+                            <span class="val-pill">Usability Testing</span>
+                        </div>
+                    </div>
 
-                        <!-- Value 3: Human factor -->
-                        <div class="value-item">
-                            <div class="value-icon-wrapper">
-                                <div class="value-icon-backdrop"></div>
-                                <div class="value-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M16 21v-2a4 4 0 0 0-4-4h-2a2 2 0 0 1-2-2v-1a1 1 0 0 0-1-1H6a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1V7a5 5 0 0 1 9-3 5 5 0 0 1 4 4.9c0 2.2-1 4.1-2.5 5.3L16 21z"/>
-                                        <path d="M12 7.5a1.5 1.5 0 0 1 2.5 1.2c0 .8-.5 1.5-1.2 1.8"/>
-                                        <path d="M14 11.5a1.5 1.5 0 0 1 2 1.3c0 .8-.6 1.4-1.5 1.4"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="value-content">
-                                <h3>Human factor</h3>
-                                <p>
-                                    People navigate apps in noisy, distracting environments with limited attention. I design defensively by reducing cognitive strain, aligning with native iOS muscle memory, and crafting forgiving interaction loops that make it intuitive to succeed and nearly impossible to make critical errors.
-                                </p>
-                            </div>
+                    <!-- Value 3: Human Factor -->
+                    <div class="value-bento-card bento-human-factor">
+                        <div class="bento-glow"></div>
+                        <div class="bento-card-top">
+                            <span class="bento-index">03</span>
+                            <span class="bento-badge">Cognitive Ergonomics</span>
+                        </div>
+                        <div class="bento-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4h-2a2 2 0 0 1-2-2v-1a1 1 0 0 0-1-1H6a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1V7a5 5 0 0 1 9-3 5 5 0 0 1 4 4.9c0 2.2-1 4.1-2.5 5.3L16 21z"/>
+                                <path d="M12 7.5a1.5 1.5 0 0 1 2.5 1.2c0 .8-.5 1.5-1.2 1.8"/>
+                                <path d="M14 11.5a1.5 1.5 0 0 1 2 1.3c0 .8-.6 1.4-1.5 1.4"/>
+                            </svg>
+                        </div>
+                        <h3 class="bento-title">Human Factor & Ergonomics</h3>
+                        <p class="bento-text">
+                            Users operate mobile devices in distracting, dynamic environments with limited attention. I design defensively by reducing cognitive strain, aligning with native iOS muscle memory, and crafting forgiving interaction loops that make user error nearly impossible.
+                        </p>
+                        <div class="bento-tags">
+                            <span class="val-pill">Defensive UI</span>
+                            <span class="val-pill">Muscle Memory</span>
+                            <span class="val-pill">Low Cognitive Load</span>
                         </div>
                     </div>
                 </div>
