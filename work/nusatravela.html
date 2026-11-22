@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="only light">
+  <title>NusaTravela | Andi Naufal</title>
+  <meta name="description" content="NusaTravela, a six-week UX case study for an online travel agent app that surfaces nearby and hidden-gem destinations and lets travellers skip the ticket queue.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- Hand-written page (richer than the generated template). Source: Behance case study, published 24 July 2022. -->
+
+  <header class="top">
+    <div class="wrap top__bar">
+      <a href="../index.html">Andi Naufal | Portfolio</a>
+      <nav class="top__nav" aria-label="Work">
+        <a href="alertaapp.html">Alerta</a>
+        <a href="nusatravela.html" aria-current="page">NusaTravela</a>
+        <a href="adiclub.html">adiClub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="case">
+    <section class="cs-hero">
+      <div class="dateline mono">
+        <span>Case study 02 / 03</span>
+        <span>UI/UX case study, mobile</span>
+        <span>2022</span>
+      </div>
+      <h1 class="cs-title"><span>NusaTravela</span></h1>
+      <p class="cs-deck">An online travel agent app for the holiday destinations <em>near you</em>, and the end of queuing for a ticket when you get there.</p>
+
+      <dl class="cs-meta mono">
+        <div><dt>Role</dt><dd>UX Lead &amp; UX Researcher</dd></div>
+        <div><dt>Team</dt><dd>5 people: 1 UX lead, 1 UX researcher, 3 UI designers</dd></div>
+        <div><dt>Duration</dt><dd>6 weeks, 2022</dd></div>
+        <div><dt>Tools</dt><dd>Figma, Adobe Photoshop</dd></div>
+        <div><dt>Link</dt><dd><a href="https://www.behance.net/gallery/148865531/NusaTravela-Online-Travel-Agent-App" target="_blank" rel="noopener">Behance case study ↗</a></dd></div>
+      </dl>
+    </section>
+
+    <figure class="cs-cover cs-cover--crop">
+      <img class="cs-cover__img" src="../assets/nusatravela/hero.jpg" alt="NusaTravela case study cover: two phones showing the home screen with nearby destinations and the Pulau Bekantan detail screen, beside the line 'Online Travel Agent app that offers the best Holiday Destinations near you'." width="1438" height="800" fetchpriority="high">
+      <figcaption class="cs-figcap mono">Fig. 1: The final design, from the Behance case study.</figcaption>
+    </figure>
+
+    <!-- § 01 Brief -->
+    <section class="cs-block" id="brief">
+      <div class="cs-block__label reveal">
+        <span class="mono">§ 01</span>
+        <h2>The brief</h2>
+      </div>
+      <div class="cs-block__body reveal">
+        <p class="lead">Travellers need a quick way to find a holiday destination and buy the ticket before they arrive, so they never have to stand in line for it.</p>
+        <div class="cs-split">
+          <div>
+            <p class="kicker mono">The problem</p>
+            <p>Travellers need a way to quickly access and order a ticket to their chosen destination, so they don't have to worry about queuing when they get there.</p>
+          </div>
+          <div>
+            <p class="kicker mono">The goal</p>
+            <p>An app that lets travellers access information about, and order tickets to, the holiday destination of their choice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- § 02 Problems -> responses -->
+    <section class="cs-block" id="problems">
+      <div class="cs-block__label reveal">
+        <span class="mono">§ 02</span>
+        <h2>Problems, answered</h2>
+      </div>
+      <div class="cs-block__body reveal">
+        <table class="cs-table">
+          <thead class="mono">
+            <tr><th scope="col">No.</th><th scope="col">What we found</th><th scope="col">What NusaTravela does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="mono">01</td><td>“Hidden gem” destinations rarely appear in similar OTA apps.</td><td>Lists hidden-gem destinations with help from local government.</td></tr>
+            <tr><td class="mono">02</td><td>Users want to know what's nearby.</td><td>Detects nearby destinations from the device's GPS location.</td></tr>
+            <tr><td class="mono">03</td><td>Users need to know their trip's Covid-19 regulations.</td><td>Builds in PeduliLindungi for national pandemic regulations.</td></tr>
+            <tr><td class="mono">04</td><td>Queuing for an on-the-spot ticket is tiresome.</td><td>Gets the trip, and the ticket, ready wherever you are.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- § 03 Timeline -->
+    <section class="cs-wide" id="timeline">
+      <header class="cs-wide__head reveal">
+        <span class="mono">§ 03</span>
+        <h2>Six weeks, five phases</h2>
+        <p class="mono">Empathize → Define → Ideate → Prototype → Test</p>
+      </header>
+      <div class="timeline-grid reveal" role="list">
+        <div class="tl-phase tl-phase--research mono">UX research: weeks 1–4</div>
+        <div class="tl-phase tl-phase--ui mono">UI design: weeks 5–6</div>
+        <div class="tl-week" role="listitem"><span class="mono">Wk 1</span><p>Problem statement, surveys, interviews</p></div>
+        <div class="tl-week" role="listitem"><span class="mono">Wk 2</span><p>Empathy map, SWOT, affinity map, personas</p></div>
+        <div class="tl-week" role="listitem"><span class="mono">Wk 3</span><p>Competitor analysis, journey map, insights</p></div>
+        <div class="tl-week" role="listitem"><span class="mono">Wk 4</span><p>Storyboards, user flow, card sorting</p></div>
+        <div class="tl-week" role="listitem"><span class="mono">Wk 5</span><p>Wireframes, low-fi, usability testing, hi-fi</p></div>
+        <div class="tl-week" role="listitem"><span class="mono">Wk 6</span><p>Prototyping, presentation</p></div>
+      </div>
+    </section>
+
+    <!-- § 04 Research -->
+    <section class="cs-block" id="research">
+      <div class="cs-block__label reveal">
+        <span class="mono">§ 04</span>
+        <h2>What the research said</h2>
+      </div>
+      <div class="cs-block__body reveal">
+        <p>An online survey and offline interviews about how people use OTA apps, targeting 20–40-year-olds. Interview answers were affinity-mapped into goals, insights, activities, pain points and features.</p>
+      </div>
+    </section>
+
+    <section class="cs-wide cs-wide--flush">
+      <dl class="stats reveal">
+        <div><dt class="mono">Android users</dt><dd>93<span>%</span></dd><p>of survey respondents use Android, so the app had to work for them first.</p></div>
+        <div><dt class="mono">Students</dt><dd>69.7<span>%</span></dd><p>of respondents were students, the core audience.</p></div>
+        <div><dt class="mono">Social-first</dt><dd>48.5<span>%</span></dd><p>find out about destinations through social media.</p></div>
+        <div><dt class="mono">Traveloka</dt><dd>51.5<span>%</span></dd><p>already use it because it's easy. That's the bar to clear.</p></div>
+      </dl>
+      <p class="cs-figcap mono stats__note">Survey respondents skewed young: 78.8% were 11–20, and 69.7% travel less than once a month.</p>
+    </section>
+
+    <section class="cs-wide cs-wide--flush" aria-label="Survey results">
+      <figure class="plate reveal">
+        <img src="../assets/nusatravela/survey.jpg" alt="Survey results as five pie charts: age range, occupation, operating system, source of information and how often people travel." width="1438" height="1400" loading="lazy">
+        <figcaption class="cs-figcap mono">Fig. 2: The full survey results behind those numbers.</figcaption>
+      </figure>
+    </section>
+
+    <blockquote class="cs-quote reveal">
+      <p>“I'm just ordering a ticket for one person. Why are there so many steps to go through?”</p>
+      <cite class="mono">Interview participant, from the empathy map</cite>
+    </blockquote>
+
+    <section class="cs-block">
+      <div class="cs-block__label reveal">
+        <span class="mono">§ 04.1</span>
+        <h2>Pain points</h2>
+      </div>
+      <div class="cs-block__body reveal">
+        <ol class="cs-steps">
+          <li><span class="mono">01</span><p><strong>Irrelevant recommendations</strong>Hard to find anything worth visiting; what's shown doesn't fit.</p></li>
+          <li><span class="mono">02</span><p><strong>Unstable prices</strong>Prices go up and down, so users are never sure what they'll pay.</p></li>
+          <li><span class="mono">03</span><p><strong>Information overload</strong>Too much piled-up information reads as redundant and bores people.</p></li>
+          <li><span class="mono">04</span><p><strong>The wrong wallet</strong>Users want to pay with the e-wallet already on their phone.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-wide" aria-labelledby="synthesis-title">
+      <header class="cs-wide__head reveal">
+        <span class="mono">§ 04.2</span>
+        <h2 id="synthesis-title">From interviews to insight</h2>
+        <p class="mono">Affinity map and empathy map</p>
+      </header>
+      <div class="plates plates--two">
+        <figure class="plate reveal">
+          <img src="../assets/nusatravela/affinity.jpg" alt="Affinity map sorting interview notes into four groups: goals and needs, general insight, user activity and pain points." width="1438" height="1870" loading="lazy">
+          <figcaption class="cs-figcap mono">Fig. 3: Affinity map. Interview answers grouped into goals, insights, activity and pain points.</figcaption>
+        </figure>
+        <figure class="plate reveal">
+          <img src="../assets/nusatravela/empathy.jpg" alt="Empathy map of the persona: what she says, thinks, feels and does when booking a holiday ticket." width="1438" height="1050" loading="lazy">
+          <figcaption class="cs-figcap mono">Fig. 4: Empathy map. What travellers say, think, feel and do while booking.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- § 05 Competitors -->
+    <section class="cs-wide" id="competitors">
+      <header class="cs-wide__head reveal">
+        <span class="mono">§ 05</span>
+        <h2>Against the field</h2>
+        <p class="mono">Three leading OTA apps in Indonesia</p>
+      </header>
+      <div class="table-scroll reveal">
+        <table class="cs-table cs-table--wide">
+          <thead class="mono">
+            <tr><th scope="col"></th><th scope="col">Traveloka</th><th scope="col">Klook</th><th scope="col">tiket.com</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row" class="mono">Order flow</th><td>Lots of steps to get through</td><td>Straightforward, easy to follow</td><td>Fewer payment methods</td></tr>
+            <tr><th scope="row" class="mono">Features</th><td>Too many on the home screen</td><td>Good use of scrolling for new users</td><td>Incomplete</td></tr>
+            <tr><th scope="row" class="mono">Typography</th><td>Good overall</td><td>Some text too small to read</td><td>Good</td></tr>
+            <tr><th scope="row" class="mono">Icons &amp; buttons</th><td>Non-uniform icons; some buttons too small</td><td>Good</td><td>Non-uniform icons, colours, sizes and radii</td></tr>
+            <tr><th scope="row" class="mono">Images</th><td>Good</td><td>Some destinations have none</td><td>Good</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cs-figcap mono">The takeaway: Klook's short order flow, without Traveloka's crowded home screen.</p>
+    </section>
+
+    <!-- § 06 Persona + journey -->
+    <section class="cs-block" id="persona">
+      <div class="cs-block__label reveal">
+        <span class="mono">§ 06</span>
+        <h2>Who it's for</h2>
+      </div>
+      <div class="cs-block__body reveal">
+        <div class="persona">
+          <div class="persona__id mono">
+            <p class="persona__name">Vivi Imamah</p>
+            <dl>
+              <div><dt>Age</dt><dd>22</dd></div>
+              <div><dt>Study</dt><dd>Final year, Brawijaya University</dd></div>
+              <div><dt>Lives</dt><dd>Malang, East Java</dd></div>
+              <div><dt>Apps</dt><dd>WhatsApp, YouTube, Instagram, Twitter</dd></div>
+            </dl>
+          </div>
+          <div class="persona__body">
+            <p class="lead">“I want an app I can use to book tickets and trips to holiday destinations near me.”</p>
+            <p>Vivi escapes the pressure of her final year with trips to nature. Her worst experience was a two-hour queue to get into an attraction, and she researches across several social apps before going because information is thin. She wants to pay with the e-wallet on her phone, like DANA or OVO.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-wide" id="journey">
+      <header class="cs-wide__head reveal">
+        <span class="mono">§ 06.1</span>
+        <h2>Vivi's journey</h2>
+        <p class="mono">Mood across the four steps of booking a trip</p>
+      </header>
+      <figure class="plate reveal">
+        <img src="../assets/nusatravela/journey.jpg" alt="User journey map for Vivi across app registration, searching, booking and payment, with what she does, thinks and says at each step. Her mood dips to confused and overwhelmed while searching, then rises to cheerful and excited." width="1438" height="1560" loading="lazy">
+        <figcaption class="cs-figcap mono">Fig. 5: The mood dips at search, where there's too much to choose from.</figcaption>
+      </figure>
+      <p class="cs-figcap mono">Insight: users also want to know whether a place is crowded, and what its Covid regulations are.</p>
+    </section>
+
+    <!-- § 07 Testing -->
+    <section class="cs-block" id="testing">
+      <div class="cs-block__label reveal">
+        <span class="mono">§ 07</span>
+        <h2>Tested, then changed</h2>
+      </div>
+      <div class="cs-block__body reveal">
+        <p>We tested the low-fidelity prototype with real users, tracking time on task, error rate and System Usability Scale. Three problems came out of it, and each changed the design.</p>
+        <ol class="fixes">
+          <li>
+            <span class="fixes__num mono">01</span>
+            <div><p class="mono fixes__label">Found</p><p>Users got confused choosing a traveller profile to finish payment.</p></div>
+            <div><p class="mono fixes__label">Changed</p><p>Profiles became distinct cards, and “Add new” moved up beside the heading.</p></div>
+          </li>
+          <li>
+            <span class="fixes__num mono">02</span>
+            <div><p class="mono fixes__label">Found</p><p>When choosing a date, users tapped the text field, not the calendar icon.</p></div>
+            <div><p class="mono fixes__label">Changed</p><p>The calendar now opens from the text field itself.</p></div>
+          </li>
+          <li>
+            <span class="fixes__num mono">03</span>
+            <div><p class="mono fixes__label">Found</p><p>Users struggled to find the button to post a review.</p></div>
+            <div><p class="mono fixes__label">Changed</p><p>“Submit Review” moved below the text field; the tab bar was removed on this sub-screen.</p></div>
+          </li>
+        </ol>
+        <p>The home screen's destination cards were also refined.</p>
+      </div>
+    </section>
+
+    <section class="cs-wide" id="before-after">
+      <header class="cs-wide__head reveal">
+        <span class="mono">§ 07.1</span>
+        <h2>Before &amp; after</h2>
+        <p class="mono">Low-fidelity prototype → final design</p>
+      </header>
+      <div class="ba">
+        <div class="ba__pair reveal">
+          <figure class="ba__shot">
+            <p class="ba__tag mono">Before</p>
+            <img src="../assets/nusatravela/booking-before.png" alt="Low-fidelity booking screen: grey profile blocks, an 'Add new profile' row below them, and a date field beside a calendar icon." width="336" height="776" loading="lazy">
+          </figure>
+          <figure class="ba__shot">
+            <p class="ba__tag mono">After</p>
+            <img src="../assets/nusatravela/booking-after.png" alt="Final booking screen: profile cards with photos, an 'Add New' button beside the heading, and a tappable date field." width="336" height="776" loading="lazy">
+          </figure>
+          <p class="cs-figcap mono ba__cap">Fig. 6: Booking. Profiles become cards, “Add New” moves up, the date field opens the calendar. Fixes 01 &amp; 02.</p>
+        </div>
+        <div class="ba__pair reveal">
+          <figure class="ba__shot">
+            <p class="ba__tag mono">Before</p>
+            <img src="../assets/nusatravela/home-before.png" alt="Low-fidelity home screen: greeting, search bar, banner placeholder, trending categories and placeholder destination cards." width="336" height="776" loading="lazy">
+          </figure>
+          <figure class="ba__shot">
+            <p class="ba__tag mono">After</p>
+            <img src="../assets/nusatravela/home-after.png" alt="Final home screen: current location, search, a promo banner, categories, and 'Near your location' cards for Pulau Bekantan and Pasar Terapung." width="336" height="776" loading="lazy">
+          </figure>
+          <p class="cs-figcap mono ba__cap">Fig. 7: Home. Current location up top, and “Near your location” cards with rating and place.</p>
+        </div>
+      </div>
+      <p class="cs-figcap mono">Screens from the original Behance case study.</p>
+    </section>
+
+    <!-- § 08 Design system -->
+    <section class="cs-block" id="system">
+      <div class="cs-block__label reveal">
+        <span class="mono">§ 08</span>
+        <h2>The system underneath</h2>
+      </div>
+      <div class="cs-block__body reveal">
+        <p>One library of rules and components so the three UI designers could build screens in parallel without drifting apart.</p>
+        <figure class="plate">
+          <img src="../assets/nusatravela/system.jpg" alt="Design system sheet: an Inter type scale from Super Large 32px down to Navbar 11px, and six colour roles (primary blue, secondary orange, dark, light, success, error) with five tints each." width="1438" height="1950" loading="lazy">
+          <figcaption class="cs-figcap mono">Fig. 8: Type scale in Inter and six colour roles, five tints each. The library also covers cards for home, orders, wishlist, reviews and profiles, and three header patterns.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- § 09 Outcome -->
+    <section class="cs-block" id="outcome">
+      <div class="cs-block__label reveal">
+        <span class="mono">§ 09</span>
+        <h2>What shipped</h2>
+      </div>
+      <div class="cs-block__body reveal">
+        <p class="lead">A high-fidelity prototype covering the whole trip, from onboarding to the QR ticket at the gate.</p>
+        <ul class="screens mono">
+          <li>Onboarding</li><li>Login &amp; sign-up</li><li>Home: nearby &amp; popular</li><li>Destination detail</li>
+          <li>Booking &amp; profiles</li><li>Payment: e-wallet &amp; virtual account</li><li>Processing &amp; success</li><li>Orders: ongoing &amp; history</li>
+          <li>Ticket with QR code</li><li>Reviews</li><li>Wishlist</li><li>Profile &amp; help centre</li>
+        </ul>
+        <p class="todo mono">Draft note: the Behance post says testing measured time on task, error rate and SUS, but doesn't publish the numbers. If you still have them, a before/after figure here would be the strongest line on the page.</p>
+      </div>
+    </section>
+
+    <section class="cs-wide" aria-label="Final screens">
+      <div class="plates plates--two">
+        <figure class="plate reveal">
+          <img src="../assets/nusatravela/finals.jpg" alt="High-fidelity mockups: three onboarding screens, the login and sign-up screens, and the home screen held in a hand." width="1438" height="2330" loading="lazy">
+          <figcaption class="cs-figcap mono">Fig. 9: High fidelity: onboarding, login and the home screen.</figcaption>
+        </figure>
+        <figure class="plate reveal">
+          <img src="../assets/nusatravela/screens.jpg" alt="Sixteen more final screens: destination detail, booking, payment details and methods, processing, success, review, reviews, orders, ticket with QR code, profile, edit profile, help centre and wishlist." width="1438" height="2850" loading="lazy">
+          <figcaption class="cs-figcap mono">Fig. 10: The rest of the flow, from destination detail to the QR ticket.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cs-block cs-credits">
+      <div class="cs-block__label reveal">
+        <span class="mono">Credits</span>
+        <h2>The team</h2>
+      </div>
+      <div class="cs-block__body reveal">
+        <dl class="credits mono">
+          <div><dt>Andi</dt><dd>UX Lead, UX Researcher</dd></div>
+          <div><dt>Vera</dt><dd>UX Researcher</dd></div>
+          <div><dt>Ande</dt><dd>UI Designer</dd></div>
+          <div><dt>Iwang</dt><dd>UI Designer</dd></div>
+          <div><dt>Rizal</dt><dd>UI Designer</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <a class="cs-next" href="adiclub.html">
+      <span class="cs-next__label mono">Next case study: 03 / 03</span>
+      <span class="cs-next__title"><span>adiClub</span><span aria-hidden="true">→</span></span>
+    </a>
+  </main>
+
+  <footer class="foot" id="contact">
+    <div class="wrap">
+      <div class="foot__grid">
+        <div>
+          <p>Andi Naufal Falah Muhamad</p>
+          <p class="dim"><span class="nc">i</span>OS developer &amp; UI/UX designer</p>
+          <p style="margin-top:20px"><a class="foot__mail" href="mailto:andinaufal0608@gmail.com">andinaufal0608@gmail.com</a></p>
+        </div>
+        <ul>
+          <li><a href="https://linkedin.com/in/andinaufalfm" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://www.behance.net/andinaufal2" target="_blank" rel="noopener">Behance ↗</a></li>
+          <li><a href="https://github.com/sgtandi" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="../assets/cv_andinaufal.pdf" target="_blank" rel="noopener">Résumé ↗</a></li>
+        </ul>
+        <ul>
+          <li><a href="../index.html">All work</a></li>
+          <li><a href="#">Back to top</a></li>
+        </ul>
+      </div>
+      <div class="foot__base"><span>© 2026 Andi Naufal</span><span>Bali / <time data-clock="Asia/Makassar">--:--</time> WITA</span></div>
+    </div>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
