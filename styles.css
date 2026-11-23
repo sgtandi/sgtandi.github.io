@@ -3,9 +3,9 @@
 
 :root {
   --bg: #ffffff;
-  --ink: #161616;
+  --ink: #d93a12;
   --mute: #6b6b6b;
-  --line: #161616;
+  --line: #d93a12;
   --rule: #bdbdbd;
   --gutter: 16px;
   --side: max(var(--gutter), 9vw);
@@ -43,17 +43,30 @@ b, strong { font-weight: 600; }
 @media (min-width: 900px) { .board { min-height: 100svh; } }
 .board + .board { border-top: 1px solid #ececec; }
 
-/* Cover: every line justified edge to edge */
-.cover { padding-top: clamp(32px, 6vw, 72px); }
-.cover__type {
-  font-size: clamp(30px, 8.2vw, 128px);
-  font-weight: 400;
-  line-height: 1.04;
-  letter-spacing: -0.035em;
-  text-transform: uppercase;
+/* Cover: small uppercase columns on top, the name mid-screen, a strip of work at the bottom */
+.hero {
+  display: grid; grid-template-rows: auto 1fr auto; gap: 24px;
+  padding-top: 16px; padding-bottom: 16px;
+  font-size: 10.5px; font-weight: 600; line-height: 1.25; text-transform: uppercase; letter-spacing: 0;
 }
-.jl { display: block; text-align: justify; text-align-last: justify; }
-.jl--c { text-align: center; text-align-last: center; }
+@media (max-width: 899px) { .hero { min-height: 100svh; } }
+.hero__top, .hero__mid { display: grid; grid-template-columns: 42fr 16fr 16fr 16fr 10fr; gap: 16px; }
+.hero__top p + p { margin-top: 10px; }
+.hero__top nav p { margin-bottom: 10px; }
+.hero__mid { align-items: center; }
+.hero__logo { font-size: clamp(22px, 2.4vw, 34px); font-weight: 600; letter-spacing: -0.04em; line-height: 1; }
+.hero__line { grid-column: 3 / -1; font-size: clamp(15px, 1.35vw, 19px); letter-spacing: -0.01em; }
+.hero__strip { display: flex; justify-content: center; gap: 6px; }
+.hero__strip li { flex: 0 1 64px; }
+.hero__strip a { display: block; }
+.hero__strip img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #f3f3f3; }
+.hero__strip a:hover img { opacity: 0.8; }
+@media (max-width: 759px) {
+  .hero__top { grid-template-columns: 1fr 1fr; row-gap: 20px; }
+  .hero__mark { grid-column: 1 / -1; }
+  .hero__mid { grid-template-columns: 1fr; gap: 12px; align-content: center; }
+  .hero__line { grid-column: auto; }
+}
 
 /* About: polaroid and contacts | about, education, experience | skills, tools */
 .about {
