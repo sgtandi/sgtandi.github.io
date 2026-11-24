@@ -54,6 +54,11 @@ b, strong { font-weight: 600; }
 }
 .jl { display: block; text-align: justify; text-align-last: justify; }
 .jl--c { text-align: center; text-align-last: center; }
+/* Opening: each word rises out of its own line, one after another */
+.cover__type .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.08em; margin-bottom: -0.08em; }
+.cover__type .w > span { display: inline-block; animation: rise 1.1s cubic-bezier(0.2, 0.75, 0.1, 1) both; animation-delay: calc(var(--d, 0ms) + 150ms); }
+@keyframes rise { from { transform: translateY(110%); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .cover__type .w > span { animation: none; } }
 
 /* About: polaroid and contacts | about, education, experience | skills, tools */
 .about {
